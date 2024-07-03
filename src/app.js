@@ -4,7 +4,7 @@ const path = require('path');
 
 //rutas
 const routeindex = require('./routes/index');
-app.use ('/', routeindex);
+app.get ('/', routeindex);
 
 
 //motor de plantillas
