@@ -2,9 +2,14 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+
+
 //rutas
 const routeindex = require('./routes/index');
 app.get ('/', routeindex);
+const routedashboard = require('./routes/routedashboard');
+app.get ('/dashboard', routedashboard);
+
 
 
 //motor de plantillas
