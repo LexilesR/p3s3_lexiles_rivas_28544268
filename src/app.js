@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 //error
 app.use((req, res, next) => {
-    res.senndFile(path.join(__dirname, '../public/html/error.html'));
+    res.sendFile(path.join(__dirname, '../public/html/error.html'));
 })
 
 //servidor
