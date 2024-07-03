@@ -6,9 +6,9 @@ const path = require('path');
 
 //rutas
 const routeindex = require('./routes/index');
-app.get ('/', routeindex);
+app.use ('/', routeindex);
 const routedashboard = require('./routes/routedashboard');
-app.get ('/dashboard', routedashboard);
+app.use ('/', routedashboard);
 
 
 
