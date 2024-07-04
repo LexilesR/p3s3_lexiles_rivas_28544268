@@ -1,55 +1,23 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    background-color: #eaeaea;
-}
 
-nav{
-    max-width: 80%;
-    margin: auto;
-    background-color: #38a9ff;
-    font-size: 10px;
-    margin-top: 20px;
-}
-
-.logo-tienda{
-    background-color: #38a9ff;
-    position: absolute;
-    padding: 15px 95px;
-}
-
-.logo{
+.logo {
     height: 80px;
     border-radius: 5px;
-}
+    margin-left: 50px;
 
-nav ul{
-    background-color: #38a9ff;
-    float: right;
+}
+  
+.nav-item{
     margin-right: 30px;
 }
 
-nav ul li{
-    background-color: #38a9ff;
-    display: inline-block;
-    line-height: 110px;
-    margin: 0 5px;
+div.container header.navbar {
+    margin-top: 1%;
 }
 
-nav ul li a{
-    background-color: #38a9ff;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
+.navbar-nav {
+    margin-left: auto;
 }
 
-
-li a.active, li a:hover{
-    background: #4d4dff;
-    transition: .5s;
+body{
+    padding-top: 10%;
 }
