@@ -19,5 +19,18 @@ div.container header.navbar {
 }
 
 body{
-    padding-top: 10%;
+    padding-top: 7%;
 }
+
+.container-agregar{
+    margin-top: 60px;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.container-inventario{
+    margin-top: 130px;
+    padding: 50px;
+    text-align: center;
+ }

@@ -7,10 +7,20 @@ const path = require('path');
 //rutas
 const routeindex = require('./routes/index');
 app.use ('/', routeindex);
+
 const routedashboard = require('./routes/routedashboard');
 app.use ('/', routedashboard);
 
+const routeproductos = require('./routes/route.productos');
+app.use ('/productos', routeproductos);
 
+const routercategorias = require('./routes/route.categoria');
+app.use ('/categorias', routercategorias);
+
+
+//aca es para poder sacar valores del formulario
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 
 //motor de plantillas
