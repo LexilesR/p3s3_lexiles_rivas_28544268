@@ -1,0 +1,36 @@
+
+.logo {
+    height: 80px;
+    border-radius: 5px;
+    margin-left: 50px;
+
+}
+  
+.nav-item{
+    margin-right: 30px;
+}
+
+div.container header.navbar {
+    margin-top: 1%;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+body{
+    padding-top: 7%;
+}
+
+.container-agregar{
+    margin-top: 60px;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.container-inventario{
+    margin-top: 130px;
+    padding: 50px;
+    text-align: center;
+ }

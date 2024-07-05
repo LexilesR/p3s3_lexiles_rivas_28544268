@@ -1,0 +1,42 @@
+<%- include ('../header.ejs') %>
+<link rel="stylesheet" href="../css/style.css">
+<div class="container-inventario">
+    <h1>Productos</h1>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Categoria</th>
+                <th>Stock</th>
+                <th>Precio</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% productos.forEach(productos => { %>
+            <tr>
+                <td><%= Productos.ID %></td>
+                <td><%= Productos.Codigo %></td>
+                <td><%= Productos.Producto %></td>
+                <td><%= Productos.Categoria_ID %></td>
+                <td><%= Productos.Existencia_actual %></td>
+                <td><%= Productos.Precio %></td>
+                <td>
+                    <a href="/productos/editar/<%= productos.ID %>">Editar</a>
+                </td>
+                <td>
+                    <a href="/productos/eliminar/<%= productos.ID %>">Borrar</a>
+                </td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <a href="/productos/agregar" class="ntn btn btn-primary mb-2">Agregar producto</a>
+    <a href="/" class="btn btn-primary mb-2">Volver</a>
+</div>
+
+<%- include ('../footer.ejs') %>
